@@ -1,0 +1,21 @@
+
+<div class="container">
+    <h1>This is the route to follow</h1>
+    <div id="map" >
+
+    </div>
+</div>
+<div class="clock">
+    <h1>Running session timer</h1>
+    <div id="clock">
+        <h2>{{hour}}:{{minute}}:{{second}}</h2>
+    </div>
+</div>
+<button (click)="StartRunning()" *ngIf="!this.onRun">
+    Start Running
+</button>
+<button (click)="StopRunning()" *ngIf="this.onRun">
+    Stop Running
+</button>
+
+<button routerLink="/home">Go home</button>

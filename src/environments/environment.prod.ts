@@ -1,3 +1,5 @@
 export const environment = {
-  production: true
+    production: true,
+    tokenIp:'df5318513dbd6f',
+    
 };
