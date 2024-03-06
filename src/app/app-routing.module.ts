@@ -6,19 +6,14 @@ import { RecordRunComponent } from './components/record-run/record-run.component
 import { RouteMapComponent } from './components/route-map/route-map.component';
 
 const routes: Routes = [
-	{path: 'home', pathMatch:'full', component: HomeComponent},
-	{path: 'maps', pathMatch:'full', component: RouteMapComponent},
-	{path: 'record', pathMatch:'full', component: RecordRunComponent},
-	{path: '', redirectTo: 'home', pathMatch: 'full'},
+  { path: 'home', pathMatch: 'full', component: HomeComponent },
+  { path: 'maps', pathMatch: 'full', component: RouteMapComponent },
+  { path: 'record', pathMatch: 'full', component: RecordRunComponent },
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
 ];
 
 @NgModule({
-	imports: [RouterModule.forRoot(routes)],
-	exports: [RouterModule]
+  imports: [RouterModule.forRoot(routes)],
+  exports: [RouterModule],
 })
-
-
-
-
-
-export class AppRoutingModule { }
+export class AppRoutingModule {}
